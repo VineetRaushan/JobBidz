@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobBidz</title>
+    <link rel="stylesheet" href="input.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@200&family=Poppins&display=swap"rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navigation menu starts -->
+    <nav>
+      <div>
+        <a href="/" class="font-extrabold text-4xl absolute top-4 left-5 text-blue-600 heading" >JobBidz</a>
+      </div>
+      <ul class="flex justify-end space-x-5 m-5">
+        <a href="/"><li class="text-blue-600 cursor-pointer text-lg">Home</li></a>
+        <a href="about_us"><li class="hover:text-blue-600 cursor-pointer text-lg">About Us</li></a>
+        <a href="contact_us"><li class="hover:text-blue-600 cursor-pointer text-lg">Contact Us</li></a>
+        <a href="need_job"><li class="hover:text-blue-600 cursor-pointer text-lg">Need Job</li></a>
+        <a href="log_in"><li class="hover:text-blue-600 cursor-pointer text-lg">Log In</li></a>
+        <a href="sign_up"><button class="bg-blue-500 text-white rounded-full px-4 py-1">Sign Up</button>
+        </a>
+      </ul>
+    </nav>
+   
+      <div class="w-full h-24 bg-red-400 rounded-br-[10rem]">
+        <h1 class="text-4xl font-[1000] text-center pt-5 text-white">Register For Job: Free </h1>
+    </div>
+
+    <!-- top banner ends -->
+
+    <!-- form starts -->
+          <form action="/" class=" w-[38rem] h-fit bg-white shadow-2xl rounded-lg mx-auto -mt-7">
+            <div class="flex space-x-5 mx-10 pt-5">
+              <div>
+                <label for="first name"class="block text-gray-700 font-bold mb-2">First Name:</label >
+                <input type="text"id="first_name"name="first_name"class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg"/>
+              </div>
+              <div>
+                <label for="name" class="block text-gray-700 font-bold mb-2">Last Name:</label>
+                <input type="text"id="last_name"name="last_name"class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg"/>
+              </div>
+            </div>
+            <div class="flex space-x-5 mx-10 mt-3">
+              <div>
+                <label for="age" class="block text-gray-700 font-bold mb-2">Age:</label>
+                <input type="number"id="age"name="age"class="w-[16rem] px-3 py-1.5 border border-gray-400 rounded-lg"/>
+              </div>
+              <div>
+                <label for="gender" class="block text-gray-700 font-bold mb-2">Gender:</label>
+                <select id="gender"name="gender"class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg">
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="non-binary">Non-binary</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex space-x-5 mx-10 mt-3">
+              <div>
+                <label for="phone_number"class="block text-gray-700 font-bold mb-2">Phone Number:</label >
+                <input type="number"id="Phone_number"name="phone_number"class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg"/>
+              </div>
+              <div>
+                <label for="type_of_work"class="block text-gray-700 font-bold mb-2">Type of Work:</label>
+                <select id="type_of_work"name="type_of_work"class="w-[16rem] px-3 py-1.5 border border-gray-400 rounded-lg">
+                  <option>Choose The Type Of Work</option>
+                  <option value="Plumber">Plumber</option>
+                  <option value="Carpenter">Carpenter</option>
+                  <option value="Cook">Cook</option>
+                  <option value="Housekeeper">Housekeeper</option>
+                  <option value="Electrician">Electrician</option>
+                  <option value="Washerman">Washerman</option>
+                  <option value="Driver">Driver</option>
+                  <option value="Maid">Maid</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex space-x-5 mx-10 pt-5">
+              <div>
+                <label for="address" class="block text-gray-700 font-bold mb-2">Address:</label>
+                <input type="text"id="city"name="city"placeholder="City"class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg"/>
+              </div>
+              <div>
+                <input type="area"id="area"name="area" placeholder="Area" class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg mt-8"/>
+              </div>
+            </div>
+            <div class="flex space-x-5 mx-10 pt-5">
+              <div>
+                <input type="text"id="house_number"name="house_number"placeholder="House No."class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg mt-2"/>
+              </div>
+              <div>
+                <input type="number"id="pin_code"name="house_number"placeholder="Pin Code"class="w-[16rem] px-3 py-1 border border-gray-400 rounded-lg mt-2"/>
+              </div>
+            </div>
+            <div class="flex mx-10 pt-5">
+              <div>
+                <label for="adhar_card">Upload Adhar Card:</label><br />
+                <input type="file" id="adhar_card" name="adhar_card" />
+              </div>
+              <div>
+                <label for="photo">Upload Your Photo:</label><br />
+                <input type="file" id="photo" name="photo" />
+              </div>
+            </div>
+            <div class="flex justify-center my-10">
+                <button class="bg-green-600 text-white px-10 py-2 text-xl rounded-full mb-10">Submit</button>
+            </div>
+          </form></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobBidz|Hire Now</title>
+    <link rel="stylesheet" href="input.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@200&family=Poppins&display=swap"rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="">
+        <div>
+          <a href="/" class="font-extrabold text-4xl absolute top-4 left-5 text-blue-600 heading" >JobBidz</a></div>
+        <ul class="flex justify-end space-x-5 m-5">
+          <a href="/"><li class="text-blue-600 cursor-pointer text-lg">Home</li></a>
+          <a href="about_us"><li class="hover:text-blue-600 cursor-pointer text-lg">About Us</li></a>
+          <a href="contact_us"><li class="hover:text-blue-600 cursor-pointer text-lg">Contact Us</li></a>
+          <a href="need_job"><li class="hover:text-blue-600 cursor-pointer text-lg">Need Job</li></a>
+          <a href="log_in"><li class="hover:text-blue-600 cursor-pointer text-lg">Log In</li></a>
+          <a href="sign_up"><button class="bg-blue-500 text-white rounded-full px-4 py-1">Sign Up </button> </a>
+        </ul></nav><div>
+        <form action="">
+          <div>
+            <h1 class="text-4xl font-bold text-red-500 text-center mt-20">"Say goodbye to household worries,<br> say hello to the perfect worker"</h1>
+          </div>
+          <div class="mt-16 ml-20 flex">
+            <select name="Worker_Type" id="Worker_type" class="border-2 text-gray-500 font-medium text-lg rounded-md px-10 py-2">
+                <option>Choose The Type Of Worker</option>
+                <option value="Plumber">Plumber</option>
+                <option value="Carpenter">Carpenter</option>
+                <option value="Cook">Cook</option>
+                <option value="Housekeeper">Housekeeper</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Washerman">Washerman</option>
+                <option value="Driver">Driver</option>
+                <option value="Maid">Maid</option></select> <select name="Time_of_work" id="Time_of_work" class="border-2 text-gray-500 font-medium text-lg rounded-md px-5 w-[352px] py-2 ml-8">
+                <option value="Time">Choose Work Timing</option>
+                <option value="Plumber">Day Shift</option>
+                <option value="Carpenter">Night Shift</option>
+                <option value="Carpenter">Live-in</option></select>
+          </div>
+          <div class="flex mt-10 ml-20">
+            <div>
+                <input type="text" placeholder="Enter Your City Name" class="border-2 text-gray-500 font-medium text-lg rounded-md px-5 w-[352px] py-1.5">
+                <button class="bg-red-500 text-white font-medium text-lg rounded-2xl m-10 px-16 py-2">Show Matching Workers</button>
+            </div>
+          </div>
+          <div class="absolute right-10 top-48">
+            <img src="../static/images/form-removebg-preview.png" class="w-80">
+          </form>
+          </div>
+        </div></body>
+</html>
